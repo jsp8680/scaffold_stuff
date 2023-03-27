@@ -9,8 +9,7 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Example widget'),
       ),
-      body: Container( 
-        //add list view to the container
+      body: Center(
         child: ListView(
           children: const <Widget>[
             ListTile(
@@ -27,13 +26,14 @@ class Home extends StatelessWidget {
             ),
           ],
         ),
-       
-
       ),
       drawer: const Drawer(
         // add things to drawer
         child: Center(
           child: Text('Drawer'),
+          // add things to drawer
+
+          
         ),
 
       ),
