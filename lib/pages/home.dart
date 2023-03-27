@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:scaffold_stuff/route/route.dart' as route;
 
 class Home extends StatelessWidget {
   const Home({super.key});

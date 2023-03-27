@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:scaffold_stuff/route/route.dart' as route;
 
 class AboutUs extends StatelessWidget {
   const AboutUs({super.key});
@@ -13,7 +14,7 @@ class AboutUs extends StatelessWidget {
       body: const Center(
         child: Text('About Us'),
       ),
-      
+
     );
   }
 }
