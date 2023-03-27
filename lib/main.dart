@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'pages/home.dart';
+import 'route/route.dart' as route;
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +14,9 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Example widget',
-      home: Home()
+      onGenerateRoute: route.controller,
+      initialRoute: router.homePage,
+
     );
   }
 }
