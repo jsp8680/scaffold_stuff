@@ -10,31 +10,42 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Home'),
       ),
-      body: Center(
+      body: const Center(
+        child: Text('Home Page'),
+      ),
+       
+      drawer: Drawer(
         child: ListView(
-          children:  const <Widget>[
-            ListTile(
-              leading: Icon(Icons.map),
-              title: Text('Map'),
-              enabled: true,
-
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text('Drawer Header'),
             ),
             ListTile(
-              leading: Icon(Icons.photo_album),
-              title: Text('Album'),
+              title: const Text('Home'),
+              onTap: () {
+                Navigator.pushNamed(context, route.homePage);
+              },
             ),
             ListTile(
-              leading: Icon(Icons.phone),
-              title: Text('Phone'),
+              title: const Text('About Us'),
+              onTap: () {
+                Navigator.pushNamed(context, route.aboutUsPage);
+              },
+            ),
+            ListTile(
+              title: const Text('Contact Us'),
+              onTap: () {
+                Navigator.pushNamed(context, route.contactUsPage);
+              },
             ),
           ],
         ),
-      ),
-      drawer: const Drawer(
-        child: Center(
-          child: Text('Drawer'),
-        ),
+        
 
+        
 
 
        
@@ -45,7 +56,7 @@ class Home extends StatelessWidget {
       floatingActionButton:
           FloatingActionButton(
             onPressed: () {
-              Navigator.pushNamed(context, route.aboutUsPage);
+             
             }, child: const Icon(Icons.add))
    );
   }
