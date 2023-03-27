@@ -9,12 +9,34 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Example widget'),
       ),
-      body: Container(
+      body: Container( 
+        //add list view to the container
         child: ListView(
+          children: const <Widget>[
+            ListTile(
+              leading: Icon(Icons.map),
+              title: Text('Map'),
+            ),
+            ListTile(
+              leading: Icon(Icons.photo_album),
+              title: Text('Album'),
+            ),
+            ListTile(
+              leading: Icon(Icons.phone),
+              title: Text('Phone'),
+            ),
+          ],
+        ),
+       
 
-        )
       ),
-      drawer: Drawer(),
+      drawer: const Drawer(
+        // add things to drawer
+        child: Center(
+          child: Text('Drawer'),
+        ),
+
+      ),
       floatingActionButton:
           FloatingActionButton(
             onPressed: () {}, child: const Icon(Icons.add))
