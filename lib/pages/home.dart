@@ -18,8 +18,11 @@ class Home extends StatelessWidget {
         child: ListView(
           children: [
             const DrawerHeader(
+              margin: EdgeInsets.all(30),
+              padding: EdgeInsets.all(30),
               decoration: BoxDecoration(
                 color: Colors.blue,
+
               ),
               child: Text('Drawer Header'),
             ),
