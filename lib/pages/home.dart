@@ -7,7 +7,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
    return Scaffold(
       appBar: AppBar(
-        title: const Text('Example widget'),
+        title: const Text('Home'),
       ),
       body: Center(
         child: ListView(
@@ -31,7 +31,7 @@ class Home extends StatelessWidget {
         child: Center(
           child: Text('Drawer'),
         ),
-        
+
 
 
        
