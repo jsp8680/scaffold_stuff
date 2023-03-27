@@ -12,10 +12,12 @@ class Home extends StatelessWidget {
       ),
       body: Center(
         child: ListView(
-          children: const <Widget>[
+          children:  const <Widget>[
             ListTile(
               leading: Icon(Icons.map),
               title: Text('Map'),
+              enabled: true,
+
             ),
             ListTile(
               leading: Icon(Icons.photo_album),
@@ -42,7 +44,9 @@ class Home extends StatelessWidget {
       ),
       floatingActionButton:
           FloatingActionButton(
-            onPressed: () {}, child: const Icon(Icons.add))
+            onPressed: () {
+              Navigator.pushNamed(context, route.aboutUsPage);
+            }, child: const Icon(Icons.add))
    );
   }
 }
