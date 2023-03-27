@@ -5,6 +5,19 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   return const Scaffold();
+   return Scaffold(
+      appBar: AppBar(
+        title: const Text('Example widget'),
+      ),
+      body: Container(
+        child: ListView(
+
+        )
+      ),
+      drawer: Drawer(),
+      floatingActionButton:
+          FloatingActionButton(
+            onPressed: () {}, child: const Icon(Icons.add))
+   );
   }
 }
