@@ -7,6 +7,11 @@ void main() {
   runApp(const MainApp());
 }
 
+List<String> images =[
+  'assets\\images\\617270.jpg',
+  'assets\'images\\Far cry.jpg',
+];
+
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
@@ -16,9 +21,13 @@ class MainApp extends StatelessWidget {
       title: 'Example widget',
       onGenerateRoute: route.controller,
       initialRoute: route.homePage,
+      
 
     );
   }
+}
+
+class Carosusel {
 }
 
 
